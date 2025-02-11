@@ -11,6 +11,6 @@ How have crime rates fluctuated alongside cost of living trends in the top ten U
 - [Bureau of Labor Statistics Consumer Price Index Data(CSV)](https://www.bls.gov/cpi/)
 - [U.S. Census Bureau Economic Data(JSON/CSV)](https://www.census.gov/data.html)
 - [Federal Bureau of Investigation Uniform Crime Reporting Program(CSV)](https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr)
-- [Bureau of Justice Statistics National Crime Victimization Survey(CSV)]https://ncvs.bjs.ojp.gov/multi-year-trends/crimeType?utm_source=chatgpt.com
+- [Bureau of Justice Statistics National Crime Victimization Survey(CSV)](https://ncvs.bjs.ojp.gov/multi-year-trends/crimeType?utm_source=chatgpt.com)
 ## Potential Visualizations
 Time-series chart, Heat maps, Bar charts,
