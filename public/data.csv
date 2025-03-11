@@ -1,236 +1,232 @@
-City, Year, Cost of Living, Crime Rate
-New York, 2025, 150, 500
-San Francisco, 2025, 150, 500
-Honolulu, 2025, 150, 500
-Boston, 2025, 120, 450
-Seattle, 2025, 120, 450
-Washington, 2025, 120, 450
-San Diego, 2025, 120, 450
-Los Angeles, 2025, 130, 400
-Sacramento, 2025, 120, 450
-Philadelphia, 2025, 120, 450
-Chicago, 2025, 120, 450
-City, Year, Cost of Living, Crime Rate
-New York, 2024, 150, 
-San Francisco, 2024, 150, 
-Honolulu, 2024, 150, 
-Boston, 2024, 120, 
-Seattle, 2024, 120, 
-Washington, 2024, 120, 
-San Diego, 2024, 120, 
-Los Angeles, 2024, 130, 
-Sacramento, 2024, 120, 
-Philadelphia, 2024, 120, 
-Chicago, 2024, 120, 
-New York, 2023, 150, 
-San Francisco, 2023, 150, 
-Honolulu, 2023, 150, 
-Boston, 2023, 120, 
-Seattle, 2023, 120, 
-Washington, 2023, 120, 
-San Diego, 2023, 120, 
-Los Angeles, 2023, 130, 
-Sacramento, 2023, 120, 
-Philadelphia, 2023, 120, 
-Chicago, 2023, 120, 
-New York, 2022, 150, 
-San Francisco, 2022, 150, 
-Honolulu, 2022, 150, 
-Boston, 2022, 120, 
-Seattle, 2022, 120, 
-Washington, 2022, 120, 
-San Diego, 2022, 120, 
-Los Angeles, 2022, 130, 
-Sacramento, 2022, 120, 
-Philadelphia, 2022, 120, 
-Chicago, 2022, 120, 
-New York, 2021, 150, 
-San Francisco, 2021, 150, 
-Honolulu, 2021, 150, 
-Boston, 2021, 120, 
-Seattle, 2021, 120, 
-Washington, 2021, 120, 
-San Diego, 2021, 120, 
-Los Angeles, 2021, 130, 
-Sacramento, 2021, 120, 
-Philadelphia, 2021, 120, 
-Chicago, 2021, 120, 
-New York, 2020, 150, 
-San Francisco, 2020, 150, 
-Honolulu, 2020, 150, 
-Boston, 2020, 120, 
-Seattle, 2020, 120, 
-Washington, 2020, 120, 
-San Diego, 2020, 120, 
-Los Angeles, 2020, 130, 
-Sacramento, 2020, 120, 
-Philadelphia, 2020, 120, 
-Chicago, 2020, 120, 
-New York, 2019, 150, 
-San Francisco, 2019, 150, 
-Honolulu, 2019, 150, 
-Boston, 2019, 120, 
-Seattle, 2019, 120, 
-Washington, 2019, 120, 
-San Diego, 2019, 120, 
-Los Angeles, 2019, 130, 
-Sacramento, 2019, 120, 
-Philadelphia, 2019, 120, 
-Chicago, 2019, 120, 
-New York, 2018, 150, 
-San Francisco, 2018, 150, 
-Honolulu, 2018, 150, 
-Boston, 2018, 120, 
-Seattle, 2018, 120, 
-Washington, 2018, 120, 
-San Diego, 2018, 120, 
-Los Angeles, 2018, 130, 
-Sacramento, 2018, 120, 
-Philadelphia, 2018, 120, 
-Chicago, 2018, 120, 
-New York, 2017, 150, 
-San Francisco, 2017, 150, 
-Honolulu, 2017, 150, 
-Boston, 2017, 120, 
-Seattle, 2017, 120, 
-Washington, 2017, 120, 
-San Diego, 2017, 120, 
-Los Angeles, 2017, 130, 
-Sacramento, 2017, 120, 
-Philadelphia, 2017, 120, 
-Chicago, 2017, 120, 
-New York, 2016, 150, 
-San Francisco, 2016, 150, 
-Honolulu, 2016, 150, 
-Boston, 2016, 120, 
-Seattle, 2016, 120, 
-Washington, 2016, 120, 
-San Diego, 2016, 120, 
-Los Angeles, 2016, 130, 
-Sacramento, 2016, 120, 
-Philadelphia, 2016, 120, 
-Chicago, 2016, 120, 
-New York, 2015, 150, 
-San Francisco, 2015, 150, 
-Honolulu, 2015, 150, 
-Boston, 2015, 120, 
-Seattle, 2015, 120, 
-Washington, 2015, 120, 
-San Diego, 2015, 120, 
-Los Angeles, 2015, 130, 
-Sacramento, 2015, 120, 
-Philadelphia, 2015, 120, 
-Chicago, 2015, 120, 
-New York, 2014, 150, 
-San Francisco, 2014, 150, 
-Honolulu, 2014, 150, 
-Boston, 2014, 120, 
-Seattle, 2014, 120, 
-Washington, 2014, 120, 
-San Diego, 2014, 120, 
-Los Angeles, 2014, 130, 
-Sacramento, 2014, 120, 
-Philadelphia, 2014, 120, 
-Chicago, 2014, 120, 
-New York, 2013, 150, 
-San Francisco, 2013, 150, 
-Honolulu, 2013, 150, 
-Boston, 2013, 120, 
-Seattle, 2013, 120, 
-Washington, 2013, 120, 
-San Diego, 2013, 120, 
-Los Angeles, 2013, 130, 
-Sacramento, 2013, 120, 
-Philadelphia, 2013, 120, 
-Chicago, 2013, 120, 
-New York, 2012, 150, 
-San Francisco, 2012, 150, 
-Honolulu, 2012, 150, 
-Boston, 2012, 120, 
-Seattle, 2012, 120, 
-Washington, 2012, 120, 
-San Diego, 2012, 120, 
-Los Angeles, 2012, 130, 
-Sacramento, 2012, 120, 
-Philadelphia, 2012, 120, 
-Chicago, 2012, 120, 
-New York, 2011, 150, 
-San Francisco, 2011, 150, 
-Honolulu, 2011, 150, 
-Boston, 2011, 120, 
-Seattle, 2011, 120, 
-Washington, 2011, 120, 
-San Diego, 2011, 120, 
-Los Angeles, 2011, 130, 
-Sacramento, 2011, 120, 
-Philadelphia, 2011, 120, 
-Chicago, 2011, 120, 
-New York, 2010, 150, 
-San Francisco, 2010, 150, 
-Honolulu, 2010, 150, 
-Boston, 2010, 120, 
-Seattle, 2010, 120, 
-Washington, 2010, 120, 
-San Diego, 2010, 120, 
-Los Angeles, 2010, 130, 
-Sacramento, 2010, 120, 
-Philadelphia, 2010, 120, 
-Chicago, 2010, 120, 
-New York, 2009, 150, 
-San Francisco, 2009, 150, 
-Honolulu, 2009, 150, 
-Boston, 2009, 120, 
-Seattle, 2009, 120, 
-Washington, 2009, 120, 
-San Diego, 2009, 120, 
-Los Angeles, 2009, 130, 
-Sacramento, 2009, 120, 
-Philadelphia, 2009, 120, 
-Chicago, 2009, 120, 
-New York, 2008, 150, 
-San Francisco, 2008, 150, 
-Honolulu, 2008, 150, 
-Boston, 2008, 120, 
-Seattle, 2008, 120, 
-Washington, 2008, 120, 
-San Diego, 2008, 120, 
-Los Angeles, 2008, 130, 
-Sacramento, 2008, 120, 
-Philadelphia, 2008, 120, 
-Chicago, 2008, 120, 
-New York, 2007, 150, 
-San Francisco, 2007, 150, 
-Honolulu, 2007, 150, 
-Boston, 2007, 120, 
-Seattle, 2007, 120, 
-Washington, 2007, 120, 
-San Diego, 2007, 120, 
-Los Angeles, 2007, 130, 
-Sacramento, 2007, 120, 
-Philadelphia, 2007, 120, 
-Chicago, 2007, 120, 
-New York, 2006, 150, 
-San Francisco, 2006, 150, 
-Honolulu, 2006, 150, 
-Boston, 2006, 120, 
-Seattle, 2006, 120, 
-Washington, 2006, 120, 
-San Diego, 2006, 120, 
-Los Angeles, 2006, 130, 
-Sacramento, 2006, 120, 
-Philadelphia, 2006, 120, 
-Chicago, 2006, 120, 
-New York, 2005, 150, 
-San Francisco, 2005, 150, 
-Honolulu, 2005, 150, 
-Boston, 2005, 120, 
-Seattle, 2005, 120, 
-Washington, 2005, 120, 
-San Diego, 2005, 120, 
-Los Angeles, 2005, 130, 
-Sacramento, 2005, 120, 
-Philadelphia, 2005, 120, 
-Chicago, 2005, 120
-
-
-
+City,Year,Cost of Living,Crime Rate
+New York,2025,150,500
+San Francisco,2025,150,500
+Honolulu,2025,150,500
+Boston,2025,120,450
+Seattle,2025,120,450
+Washington,2025,120,450
+San Diego,2025,120,450
+Los Angeles,2025,130,400
+Sacramento,2025,120,450
+Philadelphia,2025,120,450
+Chicago,2025,120,450
+New York,2024,150,500
+San Francisco,2024,150,500
+Honolulu,2024,150,500
+Boston,2024,120,450
+Seattle,2024,120,450
+Washington,2024,120,450
+San Diego,2024,120,450
+Los Angeles,2024,130,400
+Sacramento,2024,120,450
+Philadelphia,2024,120,450
+Chicago,2024,120,450
+New York,2023,150,500
+San Francisco,2023,150,500
+Honolulu,2023,150,500
+Boston,2023,120,500
+Seattle,2023,120,450
+Washington,2023,120,450
+San Diego,2023,120,450
+Los Angeles,2023,130,450
+Sacramento,2023,120,400
+Philadelphia,2023,120,450
+Chicago,2023,120,450
+New York,2022,150,450
+San Francisco,2022,150,500
+Honolulu,2022,150,500
+Boston,2022,120,500
+Seattle,2022,120,500
+Washington,2022,120,450
+San Diego,2022,120,450
+Los Angeles,2022,130,450
+Sacramento,2022,120,450
+Philadelphia,2022,120,400
+Chicago,2022,120,450
+New York,2021,150,450
+San Francisco,2021,150,450
+Honolulu,2021,150,500
+Boston,2021,120,500
+Seattle,2021,120,500
+Washington,2021,120,500
+San Diego,2021,120,450
+Los Angeles,2021,130,450
+Sacramento,2021,120,450
+Philadelphia,2021,120,450
+Chicago,2021,120,400
+New York,2020,150,450
+San Francisco,2020,150,450
+Honolulu,2020,150,450
+Boston,2020,120,500
+Seattle,2020,120,500
+Washington,2020,120,500
+San Diego,2020,120,500
+Los Angeles,2020,130,450
+Sacramento,2020,120,450
+Philadelphia,2020,120,450
+Chicago,2020,120,450
+New York,2019,150,400
+San Francisco,2019,150,450
+Honolulu,2019,150,450
+Boston,2019,120,450
+Seattle,2019,120,500
+Washington,2019,120,500
+San Diego,2019,120,500
+Los Angeles,2019,130,500
+Sacramento,2019,120,450
+Philadelphia,2019,120,450
+Chicago,2019,120,450
+New York,2018,150,450
+San Francisco,2018,150,400
+Honolulu,2018,150,450
+Boston,2018,120,450
+Seattle,2018,120,450
+Washington,2018,120,500
+San Diego,2018,120,500
+Los Angeles,2018,130,500
+Sacramento,2018,120,500
+Philadelphia,2018,120,450
+Chicago,2018,120,450
+New York,2017,150,450
+San Francisco,2017,150,450
+Honolulu,2017,150,400
+Boston,2017,120,450
+Seattle,2017,120,450
+Washington,2017,120,450
+San Diego,2017,120,500
+Los Angeles,2017,130,500
+Sacramento,2017,120,500
+Philadelphia,2017,120,500
+Chicago,2017,120,450
+New York,2016,150,450
+San Francisco,2016,150,450
+Honolulu,2016,150,450
+Boston,2016,120,400
+Seattle,2016,120,450
+Washington,2016,120,450
+San Diego,2016,120,450
+Los Angeles,2016,130,500
+Sacramento,2016,120,500
+Philadelphia,2016,120,500
+Chicago,2016,120,500
+New York,2015,150,450
+San Francisco,2015,150,450
+Honolulu,2015,150,450
+Boston,2015,120,450
+Seattle,2015,120,400
+Washington,2015,120,450
+San Diego,2015,120,450
+Los Angeles,2015,130,450
+Sacramento,2015,120,500
+Philadelphia,2015,120,500
+Chicago,2015,120,500
+New York,2014,150,500
+San Francisco,2014,150,450
+Honolulu,2014,150,450
+Boston,2014,120,450
+Seattle,2014,120,450
+Washington,2014,120,400
+San Diego,2014,120,450
+Los Angeles,2014,130,450
+Sacramento,2014,120,450
+Philadelphia,2014,120,500
+Chicago,2014,120,500
+New York,2013,150,500
+San Francisco,2013,150,500
+Honolulu,2013,150,450
+Boston,2013,120,450
+Seattle,2013,120,450
+Washington,2013,120,450
+San Diego,2013,120,400
+Los Angeles,2013,130,450
+Sacramento,2013,120,450
+Philadelphia,2013,120,450
+Chicago,2013,120,500
+New York,2012,150,500
+San Francisco,2012,150,500
+Honolulu,2012,150,500
+Boston,2012,120,450
+Seattle,2012,120,450
+Washington,2012,120,450
+San Diego,2012,120,450
+Los Angeles,2012,130,400
+Sacramento,2012,120,450
+Philadelphia,2012,120,450
+Chicago,2012,120,450
+New York,2011,150,500
+San Francisco,2011,150,500
+Honolulu,2011,150,500
+Boston,2011,120,500
+Seattle,2011,120,450
+Washington,2011,120,450
+San Diego,2011,120,450
+Los Angeles,2011,130,450
+Sacramento,2011,120,400
+Philadelphia,2011,120,450
+Chicago,2011,120,450
+New York,2010,150,450
+San Francisco,2010,150,500
+Honolulu,2010,150,500
+Boston,2010,120,500
+Seattle,2010,120,500
+Washington,2010,120,450
+San Diego,2010,120,450
+Los Angeles,2010,130,450
+Sacramento,2010,120,450
+Philadelphia,2010,120,400
+Chicago,2010,120,450
+New York,2009,150,450
+San Francisco,2009,150,450
+Honolulu,2009,150,500
+Boston,2009,120,500
+Seattle,2009,120,500
+Washington,2009,120,500
+San Diego,2009,120,450
+Los Angeles,2009,130,450
+Sacramento,2009,120,450
+Philadelphia,2009,120,450
+Chicago,2009,120,400
+New York,2008,150,450
+San Francisco,2008,150,450
+Honolulu,2008,150,450
+Boston,2008,120,500
+Seattle,2008,120,500
+Washington,2008,120,500
+San Diego,2008,120,500
+Los Angeles,2008,130,450
+Sacramento,2008,120,450
+Philadelphia,2008,120,450
+Chicago,2008,120,450
+New York,2007,150,400
+San Francisco,2007,150,450
+Honolulu,2007,150,450
+Boston,2007,120,450
+Seattle,2007,120,500
+Washington,2007,120,500
+San Diego,2007,120,500
+Los Angeles,2007,130,500
+Sacramento,2007,120,450
+Philadelphia,2007,120,450
+Chicago,2007,120,450
+New York,2006,150,450
+San Francisco,2006,150,400
+Honolulu,2006,150,450
+Boston,2006,120,450
+Seattle,2006,120,450
+Washington,2006,120,500
+San Diego,2006,120,500
+Los Angeles,2006,130,500
+Sacramento,2006,120,500
+Philadelphia,2006,120,450
+Chicago,2006,120,450
+New York,2005,150,450
+San Francisco,2005,150,450
+Honolulu,2005,150,400
+Boston,2005,120,450
+Seattle,2005,120,450
+Washington,2005,120,450
+San Diego,2005,120,500
+Los Angeles,2005,130,500
+Sacramento,2005,120,500
+Philadelphia,2005,120,500
+Chicago,2005,120,450

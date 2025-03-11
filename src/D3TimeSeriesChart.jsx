@@ -144,7 +144,7 @@ const D3TimeSeriesChart = () => {
 
   return (
     <div>
-      <h1>Beautiful Time Series Chart with D3</h1>
+      <h1>The Cost of Living Alongside Crime Rates</h1>
       {data ? (
         <svg ref={svgRef} style={{ border: '1px solid #ccc', background: '#fafafa' }} />
       ) : (

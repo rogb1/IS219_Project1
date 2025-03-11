@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
-import TimeSeriesChart from './TimeSeriesChart';
+import D3TimeSeriesChart from './D3TimeSeriesChart';
 
 function Dashboard() {
   const [data, setData] = useState([]);
@@ -15,7 +15,6 @@ function Dashboard() {
           complete: (results) => {
             const parsedData = results.data
               .map((row) => {
-                // Filter out rows with a missing date value.
                 if (!row.date) {
                   console.error('Missing date in row:', row);
                   return null;
@@ -23,7 +22,7 @@ function Dashboard() {
                 const timestamp = new Date(row.date).getTime();
                 if (isNaN(timestamp)) {
                   console.error('Invalid date:', row.date);
-                  return null; // Exclude this row
+                  return null;
                 }
                 return {
                   ...row,
@@ -47,7 +46,7 @@ function Dashboard() {
   return (
     <div>
       <h1>Time Series Dashboard</h1>
-      {data.length > 0 ? <TimeSeriesChart data={data} /> : <p>Loading data...</p>}
+      {data.length > 0 ? <D3TimeSeriesChart data={data} /> : <p>Loading data...</p>}
     </div>
   );
 }
