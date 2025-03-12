@@ -9,17 +9,30 @@ const D3TimeSeriesChart = () => {
   useEffect(() => {
     d3.csv('/data.csv', (d) => {
       return {
-        date: new Date(d.date),
-        value: +d.value,
-        event: d.event ? d.event.trim() : ''
+        city: d.City,
+        year: +d.Year, // Convert year to a number
+        costOfLiving: +d['Cost of Living'], // Convert to number
+        crimeRate: +d['Crime Rate'], // Convert to number
       };
     })
       .then((loadedData) => {
-        // Optionally, filter out any rows with invalid data.
-        const filteredData = loadedData.filter(
-          (d) => d.date instanceof Date && !isNaN(d.value)
-        );
-        setData(filteredData);
+        console.log('Loaded Data:', loadedData); // Log the loaded data
+
+        // Group data by city
+        const groupedData = d3.groups(loadedData, (d) => d.city);
+
+        // Format data for the chart
+        const formattedData = groupedData.map(([city, values]) => ({
+          city,
+          values: values.map((v) => ({
+            date: new Date(v.year, 0, 1), // Convert year to a date
+            costOfLiving: v.costOfLiving,
+            crimeRate: v.crimeRate,
+          })),
+        }));
+
+        console.log('Formatted Data:', formattedData); // Log the formatted data
+        setData(formattedData);
       })
       .catch((error) => {
         console.error('Error loading CSV:', error);
@@ -49,21 +62,28 @@ const D3TimeSeriesChart = () => {
     // Set scales.
     const xScale = d3
       .scaleTime()
-      .domain(d3.extent(data, (d) => d.date))
+      .domain([
+        d3.min(data, (d) => d3.min(d.values, (v) => v.date)),
+        d3.max(data, (d) => d3.max(d.values, (v) => v.date)),
+      ])
       .range([0, width]);
 
-    const yMin = d3.min(data, (d) => d.value);
-    const yMax = d3.max(data, (d) => d.value);
     const yScale = d3
       .scaleLinear()
-      .domain([yMin * 0.9, yMax * 1.1])
+      .domain([
+        0,
+        d3.max(data, (d) => d3.max(d.values, (v) => v.costOfLiving)) * 1.1,
+      ])
       .range([height, 0]);
+
+    // Create a color scale for cities.
+    const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
     // Create line generator.
     const line = d3
       .line()
       .x((d) => xScale(d.date))
-      .y((d) => yScale(d.value))
+      .y((d) => yScale(d.costOfLiving))
       .curve(d3.curveMonotoneX);
 
     // Draw gridlines.
@@ -80,19 +100,21 @@ const D3TimeSeriesChart = () => {
       .attr('stroke', '#e0e0e0')
       .attr('stroke-dasharray', '3,3');
 
-    // Append the line path.
-    g.append('path')
-      .datum(data)
-      .attr('fill', 'none')
-      .attr('stroke', '#8884d8')
-      .attr('stroke-width', 2)
-      .attr('d', line);
+    // Append the line paths for each city.
+    data.forEach((d) => {
+      g.append('path')
+        .datum(d.values)
+        .attr('fill', 'none')
+        .attr('stroke', colorScale(d.city))
+        .attr('stroke-width', 2)
+        .attr('d', line);
+    });
 
     // Add axes.
     const xAxis = d3
       .axisBottom(xScale)
       .ticks(6)
-      .tickFormat(d3.timeFormat('%m/%d/%Y'));
+      .tickFormat(d3.timeFormat('%Y')); // Format as year only
     const yAxis = d3.axisLeft(yScale).ticks(6);
 
     g.append('g')
@@ -106,47 +128,39 @@ const D3TimeSeriesChart = () => {
       .selectAll('text')
       .attr('font-size', '12px');
 
-    // Annotate events: filter for rows that have an event.
-    const events = data.filter((d) => d.event !== '');
+    // Add a legend for cities.
+    const legend = g
+      .selectAll('.legend')
+      .data(data)
+      .enter()
+      .append('g')
+      .attr('class', 'legend')
+      .attr('transform', (d, i) => `translate(0, ${i * 20})`);
 
-    events.forEach((d, i) => {
-      // Draw a red circle at the event point.
-      g.append('circle')
-        .attr('cx', xScale(d.date))
-        .attr('cy', yScale(d.value))
-        .attr('r', 5)
-        .attr('fill', 'red');
+    legend
+      .append('rect')
+      .attr('x', width - 100)
+      .attr('width', 18)
+      .attr('height', 18)
+      .attr('fill', (d) => colorScale(d.city));
 
-      // Stagger labels: alternate vertical offset.
-      const labelOffset = i % 2 === 0 ? -15 : 20;
-
-      // Optionally, draw a connecting dashed line.
-      g.append('line')
-        .attr('x1', xScale(d.date))
-        .attr('y1', yScale(d.value))
-        .attr('x2', xScale(d.date))
-        .attr('y2', yScale(d.value) + labelOffset + (i % 2 === 0 ? 5 : -5))
-        .attr('stroke', 'red')
-        .attr('stroke-dasharray', '2,2')
-        .attr('stroke-width', 1);
-
-      // Draw the event label.
-      g.append('text')
-        .attr('x', xScale(d.date))
-        .attr('y', yScale(d.value) + labelOffset)
-        .attr('text-anchor', 'middle')
-        .attr('fill', 'red')
-        .attr('font-size', '12px')
-        .attr('font-weight', 'bold')
-        .text(d.event);
-    });
+    legend
+      .append('text')
+      .attr('x', width - 80)
+      .attr('y', 9)
+      .attr('dy', '.35em')
+      .style('text-anchor', 'start')
+      .text((d) => d.city);
   }, [data]);
 
   return (
     <div>
       <h1>The Cost of Living Alongside Crime Rates</h1>
       {data ? (
-        <svg ref={svgRef} style={{ border: '1px solid #ccc', background: '#fafafa' }} />
+        <svg
+          ref={svgRef}
+          style={{ border: '1px solid #ccc', background: '#fafafa', width: '800px', height: '400px' }}
+        />
       ) : (
         <p>Loading data...</p>
       )}
