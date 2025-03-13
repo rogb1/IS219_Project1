@@ -1,10 +1,11 @@
 import React from 'react';
-import D3TimeSeriesChart from './D3TimeSeriesChart';
+import Dashboard from './components/Dashboard';
+import './App.css'; // Import App.css
 
 function App() {
   return (
     <div className="App">
-      <D3TimeSeriesChart />
+      <Dashboard />
     </div>
   );
 }
