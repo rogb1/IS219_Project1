@@ -1,232 +1,56 @@
-City,Year,Cost of Living,Crime Rate
-New York,2025,150,500
-San Francisco,2025,150,500
-Honolulu,2025,150,500
-Boston,2025,120,450
-Seattle,2025,120,450
-Washington,2025,120,450
-San Diego,2025,120,450
-Los Angeles,2025,130,400
-Sacramento,2025,120,450
-Philadelphia,2025,120,450
-Chicago,2025,120,450
-New York,2024,150,500
-San Francisco,2024,150,500
-Honolulu,2024,150,500
-Boston,2024,120,450
-Seattle,2024,120,450
-Washington,2024,120,450
-San Diego,2024,120,450
-Los Angeles,2024,130,400
-Sacramento,2024,120,450
-Philadelphia,2024,120,450
-Chicago,2024,120,450
-New York,2023,150,500
-San Francisco,2023,150,500
-Honolulu,2023,150,500
-Boston,2023,120,500
-Seattle,2023,120,450
-Washington,2023,120,450
-San Diego,2023,120,450
-Los Angeles,2023,130,450
-Sacramento,2023,120,400
-Philadelphia,2023,120,450
-Chicago,2023,120,450
-New York,2022,150,450
-San Francisco,2022,150,500
-Honolulu,2022,150,500
-Boston,2022,120,500
-Seattle,2022,120,500
-Washington,2022,120,450
-San Diego,2022,120,450
-Los Angeles,2022,130,450
-Sacramento,2022,120,450
-Philadelphia,2022,120,400
-Chicago,2022,120,450
-New York,2021,150,450
-San Francisco,2021,150,450
-Honolulu,2021,150,500
-Boston,2021,120,500
-Seattle,2021,120,500
-Washington,2021,120,500
-San Diego,2021,120,450
-Los Angeles,2021,130,450
-Sacramento,2021,120,450
-Philadelphia,2021,120,450
-Chicago,2021,120,400
-New York,2020,150,450
-San Francisco,2020,150,450
-Honolulu,2020,150,450
-Boston,2020,120,500
-Seattle,2020,120,500
-Washington,2020,120,500
-San Diego,2020,120,500
-Los Angeles,2020,130,450
-Sacramento,2020,120,450
-Philadelphia,2020,120,450
-Chicago,2020,120,450
-New York,2019,150,400
-San Francisco,2019,150,450
-Honolulu,2019,150,450
-Boston,2019,120,450
-Seattle,2019,120,500
-Washington,2019,120,500
-San Diego,2019,120,500
-Los Angeles,2019,130,500
-Sacramento,2019,120,450
-Philadelphia,2019,120,450
-Chicago,2019,120,450
-New York,2018,150,450
-San Francisco,2018,150,400
-Honolulu,2018,150,450
-Boston,2018,120,450
-Seattle,2018,120,450
-Washington,2018,120,500
-San Diego,2018,120,500
-Los Angeles,2018,130,500
-Sacramento,2018,120,500
-Philadelphia,2018,120,450
-Chicago,2018,120,450
-New York,2017,150,450
-San Francisco,2017,150,450
-Honolulu,2017,150,400
-Boston,2017,120,450
-Seattle,2017,120,450
-Washington,2017,120,450
-San Diego,2017,120,500
-Los Angeles,2017,130,500
-Sacramento,2017,120,500
-Philadelphia,2017,120,500
-Chicago,2017,120,450
-New York,2016,150,450
-San Francisco,2016,150,450
-Honolulu,2016,150,450
-Boston,2016,120,400
-Seattle,2016,120,450
-Washington,2016,120,450
-San Diego,2016,120,450
-Los Angeles,2016,130,500
-Sacramento,2016,120,500
-Philadelphia,2016,120,500
-Chicago,2016,120,500
-New York,2015,150,450
-San Francisco,2015,150,450
-Honolulu,2015,150,450
-Boston,2015,120,450
-Seattle,2015,120,400
-Washington,2015,120,450
-San Diego,2015,120,450
-Los Angeles,2015,130,450
-Sacramento,2015,120,500
-Philadelphia,2015,120,500
-Chicago,2015,120,500
-New York,2014,150,500
-San Francisco,2014,150,450
-Honolulu,2014,150,450
-Boston,2014,120,450
-Seattle,2014,120,450
-Washington,2014,120,400
-San Diego,2014,120,450
-Los Angeles,2014,130,450
-Sacramento,2014,120,450
-Philadelphia,2014,120,500
-Chicago,2014,120,500
-New York,2013,150,500
-San Francisco,2013,150,500
-Honolulu,2013,150,450
-Boston,2013,120,450
-Seattle,2013,120,450
-Washington,2013,120,450
-San Diego,2013,120,400
-Los Angeles,2013,130,450
-Sacramento,2013,120,450
-Philadelphia,2013,120,450
-Chicago,2013,120,500
-New York,2012,150,500
-San Francisco,2012,150,500
-Honolulu,2012,150,500
-Boston,2012,120,450
-Seattle,2012,120,450
-Washington,2012,120,450
-San Diego,2012,120,450
-Los Angeles,2012,130,400
-Sacramento,2012,120,450
-Philadelphia,2012,120,450
-Chicago,2012,120,450
-New York,2011,150,500
-San Francisco,2011,150,500
-Honolulu,2011,150,500
-Boston,2011,120,500
-Seattle,2011,120,450
-Washington,2011,120,450
-San Diego,2011,120,450
-Los Angeles,2011,130,450
-Sacramento,2011,120,400
-Philadelphia,2011,120,450
-Chicago,2011,120,450
-New York,2010,150,450
-San Francisco,2010,150,500
-Honolulu,2010,150,500
-Boston,2010,120,500
-Seattle,2010,120,500
-Washington,2010,120,450
-San Diego,2010,120,450
-Los Angeles,2010,130,450
-Sacramento,2010,120,450
-Philadelphia,2010,120,400
-Chicago,2010,120,450
-New York,2009,150,450
-San Francisco,2009,150,450
-Honolulu,2009,150,500
-Boston,2009,120,500
-Seattle,2009,120,500
-Washington,2009,120,500
-San Diego,2009,120,450
-Los Angeles,2009,130,450
-Sacramento,2009,120,450
-Philadelphia,2009,120,450
-Chicago,2009,120,400
-New York,2008,150,450
-San Francisco,2008,150,450
-Honolulu,2008,150,450
-Boston,2008,120,500
-Seattle,2008,120,500
-Washington,2008,120,500
-San Diego,2008,120,500
-Los Angeles,2008,130,450
-Sacramento,2008,120,450
-Philadelphia,2008,120,450
-Chicago,2008,120,450
-New York,2007,150,400
-San Francisco,2007,150,450
-Honolulu,2007,150,450
-Boston,2007,120,450
-Seattle,2007,120,500
-Washington,2007,120,500
-San Diego,2007,120,500
-Los Angeles,2007,130,500
-Sacramento,2007,120,450
-Philadelphia,2007,120,450
-Chicago,2007,120,450
-New York,2006,150,450
-San Francisco,2006,150,400
-Honolulu,2006,150,450
-Boston,2006,120,450
-Seattle,2006,120,450
-Washington,2006,120,500
-San Diego,2006,120,500
-Los Angeles,2006,130,500
-Sacramento,2006,120,500
-Philadelphia,2006,120,450
-Chicago,2006,120,450
-New York,2005,150,450
-San Francisco,2005,150,450
-Honolulu,2005,150,400
-Boston,2005,120,450
-Seattle,2005,120,450
-Washington,2005,120,450
-San Diego,2005,120,500
-Los Angeles,2005,130,500
-Sacramento,2005,120,500
-Philadelphia,2005,120,500
-Chicago,2005,120,450
+City,Year,Cost of Living,Violent Crime Rate
+New York City, 2024, 100, 278.0
+New York City, 2023, 100, 286.3
+New York City, 2022, 100, 296.4
+New York City, 2021, 100, 255.7
+New York City, 2020, 100, 229.7
+New York City, 2019, 100, 221.4
+New York City, 2018, 100, 216.0
+New York City, 2017, 100, 211.1
+New York City, 2016, 100, 222.2
+New York City, 2015, 100, 229.3
+New York City, 2014, 100, 234.8
+Houston, 2024, 69.9, 566.3
+Houston, 2023, 69.9, 544.5
+Houston, 2022, 63.9, 563.5
+Houston, 2021, 66.1, 558.9
+Houston, 2020, 65.1, 570.6
+Houston, 2019, 63.6, 530.8
+Houston, 2018, 70.4, 501.3
+Houston, 2017, 75.4, 523.5
+Houston, 2016, 75.2, 520.7
+Houston, 2015, 89.9, 514.4
+Houston, 2014, 86.5, 528.7
+Tampa, 2024, 82.0, 203.2
+Tampa, 2023, 76.3, 221.8
+Tampa, 2022, 75.8, 234.9
+Tampa, 2021, 79.5, 177.3
+Tampa, 2020, 67.1, 212.7
+Tampa, 2019, 70.5, 198.1
+Tampa, 2018, 76.5, 197.0
+Tampa, 2017, 75.8, 225.9
+Tampa, 2016, 72.4, 242.5
+Tampa, 2015, 75.7, 287.5
+Tampa, 2014, 76.2, 273.4
+Phoenix, 2024, 69.0, 351.5
+Phoenix, 2023, 74.0, 366.1
+Phoenix, 2022, 69.4, 395.1
+Phoenix, 2021, 66.7, 381.1
+Phoenix, 2020, 67.4, 386.0
+Phoenix, 2019, 65.9, 379.3
+Phoenix, 2018, 66.9, 396.9
+Phoenix, 2017, 69.1, 419.9
+Phoenix, 2016, 70.8, 402.9
+Phoenix, 2015, 72.3, 373.3
+Phoenix, 2014, 71.6, 382.4
+San Francisco, 2024, 92.5, 357.4
+San Francisco, 2023, 99.6, 495.7
+San Francisco, 2022, 93.9, 513.3
+San Francisco, 2021, 93.3, 438.2
+San Francisco, 2020, 91.5, 387.4
+San Francisco, 2019, 91.7, 453.6
+San Francisco, 2018, 97.8, 465.3
+San Francisco, 2017, 99.1, 501.4
+San Francisco, 2016, 103.4, 473.6
+San Francisco, 2015, 97.0, 527.6
+San Francisco, 2014, 93.7, 490.9
