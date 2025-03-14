@@ -1,5 +1,5 @@
 # The Cost of Living Alongside Crime Rates Across America 
-
+- [Google Slides Presentation](presentation.pdf)
 ## Topic
 How has the cost of living and crime rates changed across different US cities?
 
