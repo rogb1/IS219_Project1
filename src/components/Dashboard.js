@@ -555,15 +555,48 @@ const Dashboard = () => {
           <div ref={tooltipRef}></div>
         </div>
 
-        <div className="mt-6 text-sm text-gray-600 bg-gray-50 p-4 rounded-lg border border-gray-200">
-          <p>
-            <span className="font-semibold">Note:</span> Violent Crime Rate is per 100,000 population.
-            <br />
-            <span className="text-blue-600 text-xs mt-1 block">
-                NYC is the reference city staying at 100. While every other city fluctuates to show the difference in cost of living compared to NYC.
-            </span>
-          </p>
+        <div className="mt-4 text-sm bg-amber-50 p-4 rounded-lg border border-amber-200">
+          <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex-1">
+              <h4 className="font-semibold text-gray-800 mb-2">Correlation Insights:</h4>
+              <div className="space-y-2">
+                <p className="font-medium text-gray-700">No Clear Direct Pattern:</p>
+                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                  <li>NYC (COL=100) has lower crime than Houston (COL=~70)</li>
+                  <li>Tampa shows lower crime than Phoenix despite similar COL ranges</li>
+                </ul>
+                <p className="font-medium text-gray-700 mt-2">Notable Trends:</p>
+                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                  <li>Tampa: COL ↑ (76→82) while Crime ↓ (273→203)</li>
+                  <li>Houston: COL ↓ (87→70) while Crime ↑ (529→566)</li>
+                </ul>
+                <p className="font-medium text-gray-700 mt-2">Inverse Correlations:</p>
+                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                  <li>San Francisco (COL = ~90–100): High crime (~350–500) vs.
+                      Tampa (COL = ~70–82): Low crime (~180–280)
+                      → Higher COL, higher crime</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex-1 border-l-2 border-amber-200 pl-4">
+              <h4 className="font-semibold text-gray-800 mb-2">Overall:</h4>
+              <p className="text-gray-600">
+                Local Factors Matter More Than COL:
+              </p>
+              <ul className="list-disc pl-5 space-y-1 text-gray-600 mt-2">
+                <li>Policing strategies</li>
+                <li>Income inequality</li>
+                <li>Population density</li>
+                <li>Economic opportunities</li>
+              </ul>
+              <p className="text-gray-600 mt-2">
+                These likely play larger roles than COL alone.
+              </p>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   );
