@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%3CIS219_Project1%3E/static/css/main.85ef8c8c.css",
+    "main.js": "/%3CIS219_Project1%3E/static/js/main.90a7575e.js",
+    "index.html": "/%3CIS219_Project1%3E/index.html",
+    "main.85ef8c8c.css.map": "/%3CIS219_Project1%3E/static/css/main.85ef8c8c.css.map",
+    "main.90a7575e.js.map": "/%3CIS219_Project1%3E/static/js/main.90a7575e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85ef8c8c.css",
+    "static/js/main.90a7575e.js"
+  ]
+}
