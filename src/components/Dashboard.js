@@ -12,7 +12,7 @@ const Dashboard = () => {
   const [dimensions, setDimensions] = useState({
     width: 0,
     height: 500,
-    margin: { top: 50, right: 150, bottom: 50, left: 80 },
+    margin: { top: 50, right: 300, bottom: 50, left: 80 }, // Increased right margin to create more space
   });
 
   // Fetch and parse data.csv
@@ -103,7 +103,7 @@ const Dashboard = () => {
     const chartWidth = dimensions.width - dimensions.margin.left - dimensions.margin.right;
     const chartHeight = dimensions.height - dimensions.margin.top - dimensions.margin.bottom;
 
-    // Create SVG with proper dimensions
+    // Create SVG with updated dimensions
     const svg = d3.select(svgRef.current)
       .attr("width", dimensions.width)
       .attr("height", dimensions.height)
@@ -244,17 +244,18 @@ const Dashboard = () => {
     if (selectedMetrics.includes("violentCrimeRate")) {
       chart.append("g")
         .attr("class", "y-axis-violent")
-        .attr("transform", `translate(${chartWidth}, 0)`)
+        .attr("transform", `translate(${chartWidth + 0}, 0)`) // Move y-axis further to the right
         .call(d3.axisRight(yScales.violentCrimeRate)
           .ticks(5)
           .tickFormat(d => d))
         .selectAll("text")
         .style("font-size", "12px")
-        .style("fill", metricStyles.violentCrimeRate.color);
+        .style("fill", metricStyles.violentCrimeRate.color)
+        .attr("dx", "10px"); // Add padding to move labels further right
 
       chart.append("text")
         .attr("transform", "rotate(90)")
-        .attr("y", -chartWidth - 60)
+        .attr("y", -chartWidth - 120) // Adjusted for increased margin
         .attr("x", chartHeight / 2)
         .attr("dy", "1em")
         .style("text-anchor", "middle")
@@ -355,7 +356,7 @@ const Dashboard = () => {
     // Create an improved legend without animations
     const legend = svg.append("g")
       .attr("class", "legend")
-      .attr("transform", `translate(${dimensions.width - dimensions.margin.right + 20}, ${dimensions.margin.top})`);
+      .attr("transform", `translate(${dimensions.width - dimensions.margin.right + 50}, ${dimensions.margin.top})`); // Move legend further to the right
 
     // Add legend title
     legend.append("text")
@@ -540,7 +541,7 @@ const Dashboard = () => {
                 onClick={() => toggleMetric("violentCrimeRate")}
                 className={`px-4 py-2 rounded-lg text-sm font-medium ${
                   selectedMetrics.includes("violentCrimeRate")
-                    ? 'bg-red-500 text-white shadow-md'
+                    ? 'bg-blue-500 text-white shadow-md'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                 }`}
               >
